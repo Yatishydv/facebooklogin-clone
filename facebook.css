@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Closer to Facebook's background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px; /* Limit container width for better alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    width: 50%;
+    margin-left: 50px; /* Adjusted for better alignment */
+}
+
+.logo {
+    color: #184bf2; /* Facebook's blue */
+    font-size: 56px; /* Larger font to match logo style */
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.tagline {
+    color: #606770; /* Closer to Facebook's tagline color */
+    font-size: 24px; /* Slightly larger font for emphasis */
+    margin-top: 10px;
+    max-width: 400px; /* Limit width for better text flow */
+}
+
+.right-section {
+    width: 40%;
+    margin-right: 50px; /* Adjusted for better alignment */
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 24px; /* Slightly more padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow closer to Facebook */
+    margin-top: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px; /* Larger padding for better user experience */
+    margin-top: 12px;
+    border: 1px solid #ccd0d5; /* Facebook's input border color */
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1877f2; /* Facebook's blue for buttons */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #166fe5; /* Slightly darker blue on hover */
+}
+
+.forget-password {
+    color: #1877f2;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Reduced font size for better alignment */
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dddfe2; /* Lighter color for subtle effect */
+    margin: 20px 0;
+}
+
+.create-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #42b72a; /* Facebook's green for "Create new account" */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #36a420; /* Darker green on hover */
+}
+
+.create-page {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #606770; /* Closer to Facebook's text color */
+}
+
+.create-page a {
+    color: #1877f2; /* Blue link color for consistency */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
