@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px; /* Add padding to prevent content touching screen edges */
 }
 
 .container {
@@ -22,8 +23,8 @@ body {
 }
 
 .left-section {
-    width: 50%;
-    margin-left: 50px; /* Adjusted for better alignment */
+    flex: 1; /* Allow left section to adjust dynamically */
+    padding: 0 20px; /* Add consistent padding */
 }
 
 .logo {
@@ -41,12 +42,17 @@ body {
 }
 
 .right-section {
-    width: 40%;
-    margin-right: 50px; /* Adjusted for better alignment */
+    flex: 1; /* Allow right section to adjust dynamically */
+    padding: 0 20px; /* Add consistent padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login-box {
     background-color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Limit login box width for better alignment */
     padding: 24px; /* Slightly more padding for better spacing */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow closer to Facebook */
@@ -130,4 +136,63 @@ hr {
 
 .create-page a:hover {
     text-decoration: underline;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 0 20px; /* Add padding for proper spacing */
+        margin: 0; /* Remove extra margins */
+    }
+
+    .logo {
+        font-size: 48px; /* Slightly smaller font for smaller screens */
+    }
+
+    .tagline {
+        font-size: 20px; /* Adjust tagline size */
+    }
+
+    .login-box {
+        max-width: 100%; /* Allow login box to take full width on smaller screens */
+    }
+}
+
+/* Responsive design for phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+
+    .logo {
+        font-size: 36px; /* Reduce logo size for very small screens */
+    }
+
+    .tagline {
+        font-size: 18px; /* Adjust tagline size */
+    }
+
+    .login-box {
+        padding: 16px; /* Reduce padding for small devices */
+    }
+
+    .login-box input {
+        padding: 12px; /* Adjust input padding */
+    }
+
+    .login-btn {
+        padding: 12px; /* Adjust button padding */
+    }
+
+    .create-btn {
+        padding: 12px; /* Adjust button padding */
+    }
 }
